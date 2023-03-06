@@ -1,1 +1,1 @@
-# space-travellers-group-project
+# space-travellers-group
