@@ -5,9 +5,9 @@ import './App.css';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
 import Header from './components/Header';
-import Mission from './components/Mission';
-import MyProfile from './pages/MyProfile';
 import Rocket from './components/Rocket';
+import Missions from './pages/Missions';
+import MyProfile from './pages/MyProfile';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Rocket />} />
-          <Route path="/missions" element={<Mission />} />
+          <Route path="/missions" element={<Missions />} />
           <Route path="/myprofile" element={<MyProfile />} />
         </Routes>
       </Provider>
