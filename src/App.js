@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import { Provider } from 'react-redux';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
 import Header from './components/Header';
-import Rocket from './components/Rocket';
+import Rocket from './components/Rocket'; // will be deleted after creating Rockets in pages
+
+// import Rockets from './pages/Rockets'; // will be uncommented
+
 import Missions from './pages/Missions';
 import MyProfile from './pages/MyProfile';
 
