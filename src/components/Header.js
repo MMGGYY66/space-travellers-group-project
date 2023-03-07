@@ -1,49 +1,40 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Header = () => {
-  const links = [
-    {
-      id: 1,
-      title: 'Rockets',
-      to: '/Rockets',
-    },
-    {
-      id: 2,
-      title: 'Missions',
-      to: '/Missions',
-    },
-    {
-      id: 3,
-      title: 'My Profile',
-      to: '/Profile',
-    },
-  ];
-
-  const location = useLocation();
-  return (
-    <header className="header-container">
-      <nav className="navbar bg-white py-4 px-5 nav-style">
-        <img src="/planet.png" alt="Logo" width={50} />
-        <h3 className="mt-2">
-          <Link to="/" className="nav-brand">Space Travelers&apos; Hub</Link>
-        </h3>
-
-        <nav className="nav-container">
-          <ul className="links-list">
-            {links.length > 0
-              && links.map((link) => (
-                <li className={`link-item ${link.to === location.pathname ? 'link-item-active' : ''}`} key={link.id}>
-                  <NavLink to={link.to}>
-                    {link.title}
-                  </NavLink>
-                </li>
-              ))}
-          </ul>
-
-        </nav>
-      </nav>
-    </header>
-  );
-};
+const Header = () => (
+  <nav className="d-flex justify-content-between border-bottom nav-head px-5 mt-3">
+    <div className="d-flex align-middle gap-3">
+      <img src="/planet.png" alt="Logo" width={50} />
+      <h3 className="mt-2">Space Travelers&apos; Hub</h3>
+    </div>
+    <ul className="d-flex justify-content-around align-items-center list-unstyled gap-3 mt-3">
+      <li>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Rockets
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/missions"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          Missions
+        </NavLink>
+      </li>
+      |
+      <li>
+        <NavLink
+          to="/my_profile"
+          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        >
+          My Profile
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
+);
 
 export default Header;

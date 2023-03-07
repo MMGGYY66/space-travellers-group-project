@@ -1,13 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
+import './App.css';
 import Header from './components/Header';
-import Rocket from './components/Rocket'; // will be deleted after creating Rockets in pages
-
-// import Rockets from './pages/Rockets'; // will be uncommented
-
+import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
 import MyProfile from './pages/MyProfile';
 
@@ -17,9 +14,9 @@ function App() {
       <Provider store={store}>
         <Header />
         <Routes>
-          <Route path="/" element={<Rocket />} />
+          <Route path="/" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
-          <Route path="/myprofile" element={<MyProfile />} />
+          <Route path="/my_profile" element={<MyProfile />} />
         </Routes>
       </Provider>
     </Router>
