@@ -1,20 +1,47 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
+  const links = [
+    {
+      id: 1,
+      title: 'Rockets',
+      to: '/Rockets',
+    },
+    {
+      id: 2,
+      title: 'Missions',
+      to: '/Missions',
+    },
+    {
+      id: 3,
+      title: 'My Profile',
+      to: '/Profile',
+    },
+  ];
+
+  const location = useLocation();
   return (
-    <header>
+    <header className="header-container">
       <nav className="navbar bg-white py-4 px-5 nav-style">
         <img src="/planet.png" alt="Logo" width={50} />
         <h1><Link to="/" className="nav-brand">Space Travelers Hub</Link></h1>
-        <ul className="nav nav-titles">
-          <li><Link to="/Rockets" className="nav-link navbar-text">Rockets</Link></li>
-          <li><Link to="/Missions" className="nav-link navbar-text">Missions</Link></li>
-          <li><Link to="/" className="nav-link navbar-text">My Profile</Link></li>
-        </ul>
+
+        <nav className="nav-container">
+          <ul className="links-list">
+            {links.length > 0
+              && links.map((link) => (
+                <li className={`link-item ${link.to === location.pathname ? 'link-item-active' : ''}`} key={link.id}>
+                  <NavLink to={link.to}>
+                    {link.title}
+                  </NavLink>
+                </li>
+              ))}
+          </ul>
+
+        </nav>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;
