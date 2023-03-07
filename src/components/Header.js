@@ -24,7 +24,9 @@ const Header = () => {
     <header className="header-container">
       <nav className="navbar bg-white py-4 px-5 nav-style">
         <img src="/planet.png" alt="Logo" width={50} />
-        <h1><Link to="/" className="nav-brand">Space Travelers Hub</Link></h1>
+        <h3 className="mt-2">
+          <Link to="/" className="nav-brand">Space Travelers&apos; Hub</Link>
+        </h3>
 
         <nav className="nav-container">
           <ul className="links-list">
