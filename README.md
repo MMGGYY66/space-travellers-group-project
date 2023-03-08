@@ -165,8 +165,9 @@ To run tests, run the following command:
 
 👤 ** Gerson Sanchez **
 
-- GitHub: 
-
+- GitHub: [@githubhandle](https://github.com/gealsanchez)
+- Twitter: [@twitterhandle](https://twitter.com/gealsanchez)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gerson-sanchez-88309b57/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
