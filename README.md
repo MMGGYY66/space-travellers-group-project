@@ -200,6 +200,6 @@ we would like to thank Microverse for giving us the chance to improve our coding
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT]() licensed.
+This project is [MIT](https://github.com/MMGGYY66/space-travellers-group-project/blob/tests/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
