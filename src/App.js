@@ -10,16 +10,18 @@ import MyProfile from './pages/MyProfile';
 
 function App() {
   return (
-    <Router>
-      <Provider store={store}>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Rockets />} />
-          <Route path="/missions" element={<Missions />} />
-          <Route path="/my_profile" element={<MyProfile />} />
-        </Routes>
-      </Provider>
-    </Router>
+    <>
+      <Router>
+        <Provider store={store}>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Rockets />} />
+            <Route path="/missions" element={<Missions />} />
+            <Route path="/my_profile" element={<MyProfile />} />
+          </Routes>
+        </Provider>
+      </Router>
+    </>
   );
 }
 

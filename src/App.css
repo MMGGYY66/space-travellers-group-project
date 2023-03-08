@@ -1,3 +1,23 @@
+* {
+  padding: 0;
+}
+
+.nav-head {
+  height: 50px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.inactive {
+  text-decoration: none;
+}
+
+.height {
+  height: 230px;
+}
+
 .header-container {
   display: flex;
 }

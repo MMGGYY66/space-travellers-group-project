@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import icon from '../images/planet.png';
 
 const Header = () => (
   <nav className="d-flex justify-content-between border-bottom nav-head px-5 mt-3">
     <div className="d-flex align-middle gap-3">
-      <img src="/planet.png" alt="Logo" width={50} />
+      <img src={icon} alt="logo" />
       <h3 className="mt-2">Space Travelers&apos; Hub</h3>
     </div>
     <ul className="d-flex justify-content-around align-items-center list-unstyled gap-3 mt-3">
