@@ -163,7 +163,7 @@ To run tests, run the following command:
 - Twitter: [twitter](https://twitter.com/MOHAMEDELDIMARd)
 - Facebook: [facebook](https://www.facebook.com/MOHAMED.ELDIMARDASH/)
 
-👤 **Gerson Sanchez**
+👤 ** Gerson Sanchez **
 
 - GitHub: 
 
