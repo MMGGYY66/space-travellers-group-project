@@ -93,7 +93,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
+# [space-travellers-group-project](https://mohamed-gerson-space-travellers-hub.surge.sh/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,6 +146,7 @@ To run tests, run the following command:
  <code>npm test</code>### Testing
 
 ### Deployment
+[space-travellers-group-project](https://mohamed-gerson-space-travellers-hub.surge.sh/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
